@@ -84,16 +84,47 @@ console.log(cars);
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+cars.push({
+  brand: "Fiat",
+  model: "Panda",
+  color: "red",
+  trims: ["Cross", "Mild Hybrid", "Pop"],
+});
 
+console.log(cars);
+
+for (i = 0; i < cars.length; i++) {
+  const last = cars[i].trims.pop();
+  console.log(last);
+}
+
+console.log(cars);
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = [];
 
+for (i = 0; i < cars.length; i++) {
+  const first = cars[i].trims.shift();
+  console.log(first);
+  justTrims.push(first);
+  console.log(justTrims);
+}
+
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
+for (i = 0; i < cars.length; i++) {
+  const first = cars[i].color[0];
+  /* console.log(first); */
+
+  if (first === "b") {
+    console.log("Fizz");
+  } else {
+    console.log("Buzz");
+  }
+}
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
