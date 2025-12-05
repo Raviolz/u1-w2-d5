@@ -20,15 +20,21 @@ for (i = 0; i < pets.length; i++) {
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
-
+pets.sort();
+console.log(pets);
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
+pets.reverse();
+console.log(pets);
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
-
+const first = pets.shift();
+console.log(first);
+pets.push(first);
+console.log(pets);
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
 */
@@ -52,6 +58,27 @@ const cars = [
     trims: ["life", "style", "r-line"],
   },
 ];
+/* PRIMO RAGIONAMENTO CON TARGA FISSA PER TUTTE 
+for (i = 0; i < cars.length; i++) {
+  const car = cars[i];
+  console.log(car);
+  let licensePlate = "TARGA";
+  cars[i].licensePlate = licensePlate;
+  console.log(car);
+}
+
+console.log(cars);    */
+
+for (i = 0; i < cars.length; i++) {
+  const car = cars[i];
+  console.log(car);
+  let licensePlate = "BG" + (Math.floor(Math.random() * 900) + 100) + "EC";
+
+  cars[i].licensePlate = licensePlate;
+  console.log(car);
+}
+
+console.log(cars);
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
