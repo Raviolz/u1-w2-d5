@@ -1,1 +1,108 @@
-/* Your styles here */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logobar {
+  background-color: #222f3f;
+  height: 6vh;
+}
+
+.logobar img {
+  height: 2.5rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+nav {
+  background-color: #364759;
+  height: 3vh;
+  padding-top: 1rem;
+}
+
+nav a {
+  font-size: 1.1rem;
+  color: beige;
+  padding-left: 1rem;
+}
+
+main {
+  height: 90vh;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  background-color: #e9edee;
+}
+
+.orangebanner {
+  background-color: #f56600;
+  text-align: center;
+  color: #ffd6ab;
+  height: 2.5rem;
+}
+
+.guide {
+  text-align: center;
+  color: #ffffff;
+  background-image: url(../images/bg-image.png);
+  height: 10rem;
+  background-color: #ffffff;
+  margin-top: 2rem;
+}
+
+.buy {
+  margin-top: 2rem;
+}
+
+.cards {
+  background-color: #ffffff;
+  height: 30rem;
+  box-sizing: content-box;
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+.cards img {
+  display: inline-block;
+
+  border-radius: 5%;
+  height: 10em;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardscontainer {
+  display: inline-block;
+  width: 22em;
+  height: 26em;
+  padding-right: 4em;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  overflow: hidden; /* fa sì che l’immagine resti dentro */
+  vertical-align: top;
+}
+
+.fullwidthcards img {
+  width: 100%;
+}
+
+.fullwidthcards div {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.back {
+  background-color: #364759;
+  color: #cfd9de;
+  text-align: center;
+  height: 4em;
+}
+
+.bottomlogo {
+  height: 10em;
+  background-color: #222f3f;
+}
