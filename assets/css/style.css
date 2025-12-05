@@ -47,14 +47,16 @@ main a {
   background-color: #f56600;
   text-align: center;
   font-weight: bold;
-  color: #e9edee;
+
   height: 2rem;
   padding-top: 1em;
 }
 
-.orangebanner div {
+.orangebanner a {
   padding-top: 0.7em;
   font-weight: bold;
+  text-decoration: none;
+  color: #e9edee;
 }
 
 .guide {
@@ -66,6 +68,9 @@ main a {
   margin-top: 2rem;
   padding-top: 4em;
   font-weight: bold;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .guide span {
@@ -74,7 +79,7 @@ main a {
 
 .guide div {
   margin-top: 2em;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .buy {
@@ -85,6 +90,7 @@ main a {
   padding-top: 1em;
   font-size: 1.3em;
   font-weight: 500;
+  font-weight: 400;
 }
 
 .caption a {
@@ -106,7 +112,7 @@ main a {
   margin: 1em;
   height: 29em;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(6, 6, 6, 0.419);
   overflow: hidden;
   vertical-align: top;
 }
@@ -128,7 +134,7 @@ main a {
 
 .fullwidthcards figcaption {
   padding-top: 1em;
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 600;
   color: #111;
 }
@@ -147,10 +153,11 @@ main a {
   color: #cfd9de;
   text-align: center;
   height: 2.5em;
-  padding-top: 1em;
+  padding-top: 1.2em;
 }
 
 .back a {
+  font-size: 1.1em;
   color: #cfd9de;
 }
 .bottomlogo {
